@@ -1,0 +1,80 @@
+/* Fonts */
+@font-face {
+  src: url("../Fonts/Chewy-Regular.ttf");
+  font-family: "Chewy";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornsilk;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  text-align: center;
+}
+
+.game h1 {
+  font-size: 4.6rem;
+  color: #374151;
+  margin-bottom: 4rem;
+  font-family: "Bruno Ace SC";
+}
+
+.game p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-family: "Chewy";
+  letter-spacing: 0.2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  gap: 0.5rem;
+  margin: 2rem auto;
+}
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  border-radius: 1.6rem;
+  border: 1px solid #333;
+}
+
+.status {
+  margin-bottom: 1rem;
+}
+
+.status small {
+  font-size: 2rem;
+  color: #3b82f6;
+  font-weight: bold;
+  font-family: "Chewy";
+  letter-spacing: 0.3rem;
+}
+
+.reset-btn {
+  padding: 12px 15px;
+  cursor: pointer;
+}
